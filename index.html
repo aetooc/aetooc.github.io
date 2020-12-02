@@ -12,12 +12,53 @@
   <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
   <script type="text/javascript" src="js/jquery.particleground.js"></script>
   <script type="text/javascript" src="js/demo.js"></script>
+<style>
+	* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}img {
+  border-radius: 50%;
+  border: 5px solid #555;
+}
+</style>
 </head>
 
 <body>
 
 <div id="particles">
   <div id="intro">
+  	<center><div class="container">
+    <img class="portrait" src="assests/aetooc.jpeg" alt="John Smith" height="190px" width="190px"  />
+     <div class="overlay">I'm Awais</div>
+</div></center><br>
       <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Muhammad Awais <a href="assests/My Résumé.pdf" style="color: white;"><i class="fas fa-file-pdf" style="font-size: 1em;"  height="35" width="35"></i></a></h2>
         <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
     <a href="https://www.linkedin.com/in/muhammadawaisaijaz/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
